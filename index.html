@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="deleteLast()">DEL</button>
+            <button class="button operator" onclick="appendOperator('/')">/</button>
+            <button class="button operator" onclick="appendOperator('*')">*</button>
+            <button class="button" onclick="appendNumber(7)">7</button>
+            <button class="button" onclick="appendNumber(8)">8</button>
+            <button class="button" onclick="appendNumber(9)">9</button>
+            <button class="button operator" onclick="appendOperator('-')">-</button>
+            <button class="button" onclick="appendNumber(4)">4</button>
+            <button class="button" onclick="appendNumber(5)">5</button>
+            <button class="button" onclick="appendNumber(6)">6</button>
+            <button class="button operator" onclick="appendOperator('+')">+</button>
+            <button class="button" onclick="appendNumber(1)">1</button>
+            <button class="button" onclick="appendNumber(2)">2</button>
+            <button class="button" onclick="appendNumber(3)">3</button>
+            <button class="button operator" onclick="calculate()">=</button>
+            <button class="button" onclick="appendNumber(0)">0</button>
+            <button class="button" onclick="appendNumber('.')">.</button>
+            <button class="button" onclick="appendFunction('sin')">sin</button>
+            <button class="button" onclick="appendFunction('cos')">cos</button>
+            <button class="button" onclick="appendFunction('tan')">tan</button>
+            <button class="button" onclick="appendFunction('log')">log</button>
+            <button class="button" onclick="appendFunction('sqrt')">√</button>
+            <button class="button" onclick="appendOperator('**')">^</button>
+            <button class="button" onclick="appendFunction('exp')">e^</button>
+            <button class="button" onclick="appendFunction('PI')">π</button>
+            <button class="button" onclick="appendBrackets('(')">(</button>
+            <button class="button" onclick="appendBrackets(')')">)</button>
+            <!--
+            <button class="button" onclick="appendFunction('asin')">asin</button>
+            <button class="button" onclick="appendFunction('acos')">acos</button>
+            <button class="button" onclick="appendFunction('atan')">atan</button>
+            -->
+            <button class="button" onclick="appendFunction('cbrt')">∛</button>
+            <button class="button" onclick="toggleMode()">Deg/Rad</button>
+        </div>
+    </div>
+    <div class="footer">Made by Shivam</div>
+    <script src="script.js"></script>
+</body>
+</html>
